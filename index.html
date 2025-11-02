@@ -312,7 +312,7 @@
         popup.innerHTML = `
                         <div class="tip-header">
                             <span class="tip-icon">❤</span>
-                            <span class="tip-title">温馨提醒</span>
+                            <span class="tip-title">亲爱的惠</span>
                         </div>
                         <div class="tip-content">${randomTip}</div>
                     `;
@@ -330,7 +330,7 @@
         popup.style.top = `${top}px`;
 
         // 随机z-index确保重叠效果自然
-        popup.style.zIndex = Math.floor(Math.random() * 50) + 10;
+        popup.style.zIndex = 1000 + createdCount;
 
         // 添加到容器
         popupLayer.appendChild(popup);
